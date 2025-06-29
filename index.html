@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>815Identities</title>
+  <title>My First Website</title>
   <style>
-  body {
-    background: linear-gradient(to right, #8e2de2, #4a00e0);
-    color: white;
-  }
-</style>
-</head>
-<body>
-  <h1>Hello 815 fans!</h1>
-  <p>Welcome to my website!</p>
-  <p>Quadratic formula: \(x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\)</p>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #0047AB, #0088FF); /* cobalt blue gradient */
+      color: white;
+      min-height: 100vh;
+    }
 
+    .content {
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1, p {
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+  </style>
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)']] }
+    };
+  </script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
+</head>
+<body>
+  <div class="content">
+    <h1>Hello, world!</h1>
+    <p>This is my first website!</p>
+    <p>Quadratic formula: \(x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\)</p>
+  </div>
 </body>
 </html>
